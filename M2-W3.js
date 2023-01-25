@@ -115,7 +115,6 @@ function upperFirst(stringOne){
     };
 
     const stringaDue = stringa.join(" ");
-    // console.log(stringaDue);
     return stringaDue;
 
 };
