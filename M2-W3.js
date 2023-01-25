@@ -107,10 +107,36 @@ console.log(reverseString(string1));
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 
+function upperFirst(stringOne){
+
+    const stringa = stringOne.split(" ");
+    for(let i = 0; i < stringa.length; i++){
+        stringa[i] = stringa[i].charAt(0).toUpperCase() + stringa[i].slice(1);
+    };
+
+    const stringaDue = stringa.join(" ");
+    // console.log(stringaDue);
+    return stringaDue;
+
+};
+console.log(upperFirst("ciao messana"));
+
 /* ESERCIZIO 9
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
+function cutString(stringTwo){
+    return stringTwo.slice(1, stringTwo.length - 1);
+};
+console.log(cutString("Ciao"));
 
 /* ESERCIZIO 10
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
+function giveMeRandom(n){
+    let arrays = [];
+    for(let i = 0; i < n; i++){
+        arrays[i] = Math.random() * 10;
+    };
+    return arrays;
+};
+console.log(giveMeRandom(7));
