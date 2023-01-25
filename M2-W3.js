@@ -135,7 +135,7 @@ console.log(cutString("Ciao"));
 function giveMeRandom(n){
     let arrays = [];
     for(let i = 0; i < n; i++){
-        arrays[i] = Math.random() * 10;
+        arrays[i] = parseInt(Math.random() * 10);
     };
     return arrays;
 };
