@@ -828,3 +828,37 @@ const jobs = [
       fraudulent: 0,
     },
   ]
+
+
+// const index = jobs.findIndex(function(todo, index){
+//   console.log(todo);
+//   return todo.title === 'English Teacher Abroad';
+// });
+// console.log(index);
+
+
+// const findTodo = function(myTodos, title){
+//   const index = myTodos.findIndex(function(todo, index){
+//     return todo.title.toLowerCase() === title.toLowerCase();
+//   });
+//   return myTodos[index];
+// };
+
+// let printMe = findTodo(jobs, 'Completion Engineer');
+// console.log(printMe);
+
+// const findTodo = function(myTodos, title){
+//   const titleReturned = myTodos.find(function(todo, index){
+//     return todo.title.toLowerCase() === title.toLowerCase();
+//   });
+//   return titleReturned;
+// };
+// let printMe = findTodo(jobs, 'Completion Engineer');
+// console.log(printMe);
+
+// let obj = jobs.find(job => job.title === 'Completion Engineer');
+// console.log(obj);
+
+// let jobsLength = jobs.length;
+// console.log(jobsLength);
+
