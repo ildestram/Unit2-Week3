@@ -862,3 +862,25 @@ const jobs = [
 // let jobsLength = jobs.length;
 // console.log(jobsLength);
 
+const jobsArrays = function(position, location){
+  position = position.toLowerCase();
+  location = location.toLowerCase();
+
+  let result = [];
+  let startCount = 0;
+
+  for(let i = 0; i < jobs.length; i++){
+    let job = jobs[i];
+    if(job.title.toLowerCase().includes(position) && job.location.toLowerCase().includes(location)){
+      let jobber = {
+        job_id: job.job_id,
+        title: job.title,
+        location: job.location,
+        department: job.department,
+      }
+      result.push(jobber);
+      count++;
+    }
+  }
+  return {result, startCount};
+}
